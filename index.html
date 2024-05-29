@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractiveness Level Detection</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Attractiveness Level Detection</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="classification.html" class="nav-link">Classification Results</a></li>
+                <li><a href="regression.html" class="nav-link">Regression Results</a></li>
+                <li><a href="cnn.html" class="nav-link">CNN Results</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>The Attractiveness Level Detection project aims to develop a machine learning model capable of estimating the attractiveness level of a person from a facial image. This project encompasses several key phases, including data collection and preprocessing, facial landmark extraction, model selection, training, and evaluation. The project's potential applications span across human-computer interaction, psychological research, and marketing and advertising sectors.</p>
+        </section>
+        <section id="datasets">
+            <h2>Datasets</h2>
+            <p>Two datasets were utilized in this project:</p>
+            <ul>
+                <li><a href="https://github.com/HCIILAB/SCUT-FBP5500-Database-Release">SCUT-FBP5500 Database</a>: This dataset contains 5500 images labeled with beauty scores ranging from 1 to 5. It includes images of 2000 Asian females, 2000 Asian males, 750 Caucasian females, and 750 Caucasian males. The dataset's extensive labeling and variety make it a suitable choice for this project.</li>
+                <li><a href="https://github.com/fbplab/MEBeauty-database">MeBeauty Database</a>: This dataset comprises 2550 images of individuals from diverse racial backgrounds, rated by approximately 300 individuals. The beauty scores range from 1 to 10, and the dataset's diversity enhances the robustness of the model by providing a wide range of attractiveness ratings.</li>
+            </ul>
+        </section>
+        <section id="methods">
+            <h2>Methods</h2>
+            <p>Several machine learning techniques were employed for both regression and classification tasks:</p>
+            <ul>
+                <li>Classification: K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Random Forest (RF), and Decision Tree (DT).</li>
+                <li>Regression: K-Nearest Neighbors (KNN), Support Vector Regression (SVR), Random Forest Regression (RFR), Decision Tree Regression (DTR), and Linear Regression (LR).</li>
+                <li>Convolutional Neural Network (CNN) for the MeBeauty dataset.</li>
+            </ul>
+            <p>Google MediaPipe was extensively used for facial landmark detection and feature extraction. MediaPipe is a cross-platform framework for building custom machine learning pipelines. It was crucial in aligning facial features during the data preprocessing phase.</p>
+            <div class="image-row">
+                <div class="image-column">
+                    <img src="results/img1.png" alt="Facial landmarks on female">
+                    <p>Figure 1: Facial landmarks detected on a female face using Google MediaPipe.</p>
+                </div>
+                <div class="image-column">
+                    <img src="results/img2.png" alt="Facial landmarks on male">
+                    <p>Figure 2: Facial landmarks detected on a male face using Google MediaPipe.</p>
+                </div>
+            </div>
+            <p>MediaPipe was chosen for its robustness in detecting facial landmarks accurately, which is pivotal for feature extraction and alignment. The extracted features were saved in a .csv file for subsequent use in machine learning models.</p>
+            <div class="image-row">
+                <div class="image-column">
+                    <img src="results/img3.jpg" alt="Original female face">
+                    <p>Figure 3: Original image of a female face from the dataset.</p>
+                </div>
+                <div class="image-column">
+                    <img src="results/img4.jpg" alt="Original male face">
+                    <p>Figure 4: Original image of a male face from the dataset.</p>
+                </div>
+            </div>
+            <p>Various blendshape features were analyzed to understand their impact on attractiveness levels. Blendshapes are a method of defining facial expressions, which are critical in understanding subtle cues in attractiveness.</p>
+            <div class="image-row">
+                <div class="image-column">
+                    <img src="results/img5.png" alt="Face Blendshapes - Female">
+                    <p>Figure 5: Face blendshapes for a female face.</p>
+                </div>
+                <div class="image-column">
+                    <img src="results/img6.png" alt="Face Blendshapes - Male">
+                    <p>Figure 6: Face blendshapes for a male face.</p>
+                </div>
+            </div>
+        </section>
+        <section id="downloads">
+            <h2>Downloads</h2>
+            <a href="downloads/src.zip" download>Download Project Code (ZIP)</a><br>
+            <a href="downloads/poster.png" download>Download Project Poster (PNG)</a>
+        </section>
+        <section id="video">
+            <h2>Project Video</h2>
+            <div class="video-container">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="owner">
+            <h2>Project Owner</h2>
+            <p>Oğuzhan Deniz, Student ID: 21946022</p>
+        </section>
+    </main>
+    <script src="src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+header {
+    background-color: #20b4be;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+main {
+    padding: 30px;
+}
+
+h2 {
+    color: #20b4be;
+}
+
+.dataset-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.metric-column {
+    flex: 1;
+    min-width: 750px;
+    margin: 10px;
+}
+
+.metric img {
+    width: 100%;
+    max-width: 750px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.metric-column-cnn {
+    flex: 1;
+    min-width: 900px;
+    margin: 10px;
+}
+
+.metric-column-cnn img {
+    width: 100%;
+    max-width: 900px;
+    margin: 10px 0;
+}
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 1200px;
+    height: 600px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-column {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.image-column img {
+    width: 100%;
+    max-width: 350px;
+}
+
+#downloads {
+    margin: 20px 0;
+}
+
+#downloads a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #20b4be;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#downloads a:hover {
+    background-color: #20b3bed5;
+}
+
