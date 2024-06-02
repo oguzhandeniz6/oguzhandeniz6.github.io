@@ -135,3 +135,23 @@ footer {
     background-color: #20b3bed5;
 }
 
+.dataset-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metric-column {
+    width: 48%;
+}
+
+.full-width {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.full-width p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
